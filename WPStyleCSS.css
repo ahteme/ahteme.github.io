@@ -1,0 +1,854 @@
+@charset "UTF-8";
+
+body {
+    background-image:
+
+        linear-gradient(
+           rgba(255, 255, 255, 0.25) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+             rgba(255, 255, 255, 0.25) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            to bottom,
+            cornflowerblue 50px,
+            cornflowerblue 3000px,
+            midnightblue 6000px,
+            midnightblue 50%
+        );
+
+    background-size:
+        50px 50px,
+        50px 50px,
+        auto;
+}
+
+
+
+.floating-letter {
+    position: absolute;
+    color: midnightblue;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+
+/* A */
+
+.letter-a {
+    font-family: "Apoca", serif;
+    font-size: 180px;
+    left: 2%;
+    top: 5%;
+    transform: rotate(-15deg);
+}
+
+
+/* B */
+
+.letter-b {
+    font-family: "Montserrat", sans-serif;
+    font-size: 100px;
+    left: 12%;
+    top: 45%;
+    transform: rotate(10deg);
+}
+
+
+/* g */
+
+.letter-g {
+    font-family: "Jost", sans-serif;
+    font-size: 150px;
+    left: 20%;
+    bottom: 2%;
+    transform: rotate(15deg);
+}
+
+
+/* R */
+
+.letter-r {
+    font-family: "Montserrat", sans-serif;
+    font-size: 170px;
+    right: 18%;
+    top: 3%;
+    transform: rotate(12deg);
+}
+
+
+/* S */
+
+.letter-s {
+    font-family: "Apoca", serif;
+    font-size: 130px;
+    right: 4%;
+    bottom: 5%;
+    transform: rotate(-15deg);
+}
+
+
+/* Q */
+
+.letter-q {
+    font-family: "Jost", sans-serif;
+    font-size: 100px;
+    right: 30%;
+    bottom: 3%;
+    transform: rotate(8deg);
+}
+
+
+/* M */
+
+.letter-m {
+    font-family: "Apoca", serif;
+    font-size: 110px;
+    left: 34%;
+    top: 2%;
+    transform: rotate(-8deg);
+}
+
+
+/* e */
+
+.letter-e {
+    font-family: "Jost", sans-serif;
+    font-size: 90px;
+    right: 8%;
+    top: 10%;
+    transform: rotate(20deg);
+}
+
+
+/* K */
+
+.letter-k {
+    font-family: "Montserrat", sans-serif;
+    font-size: 120px;
+    left: 5%;
+    bottom: 2%;
+    transform: rotate(-10deg);
+}
+
+
+/* T */
+
+.letter-t {
+    font-family: "Apoca", serif;
+    font-size: 100px;
+    right: 2%;
+    top: 45%;
+    transform: rotate(12deg);
+}
+
+
+/* x */
+
+.letter-x {
+    font-family: "Jost", sans-serif;
+    font-size: 80px;
+    left: 28%;
+    top: 38%;
+    transform: rotate(-20deg);
+}
+
+
+/* & */
+
+.letter-amp {
+    font-family: "Apoca", serif;
+    font-size: 140px;
+    right: 27%;
+    top: 35%;
+    transform: rotate(-10deg);
+}
+
+
+/* FLOATING CIRCLES */
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+
+/* large midnight blue circle */
+
+.circle-one {
+    width: 180px;
+    height: 180px;
+    background-color: midnightblue;
+
+    left: 4%;
+    top: 15%;
+}
+
+
+/* floral white circle */
+
+.circle-two {
+    width: 120px;
+    height: 120px;
+    background-color: floralwhite;
+
+    left: 12%;
+    top: 25%;
+}
+
+
+/* midnight blue outline */
+
+.circle-three {
+    width: 160px;
+    height: 160px;
+    border: 5px solid midnightblue;
+
+    right: 7%;
+    top: 10%;
+}
+
+
+/* floral white outline */
+
+.circle-four {
+    width: 100px;
+    height: 100px;
+    border: 5px solid floralwhite;
+
+    right: 14%;
+    top: 25%;
+}
+
+
+/* smaller midnight blue circle */
+
+.circle-five {
+    width: 70px;
+    height: 70px;
+    background-color: midnightblue;
+
+    left: 25%;
+    bottom: 8%;
+}
+
+
+/* small floral white outline */
+
+.circle-six {
+    width: 60px;
+    height: 60px;
+    border: 4px solid floralwhite;
+
+    right: 30%;
+    bottom: 10%;
+}
+
+
+/* larger floral white circle */
+
+.circle-seven {
+    width: 140px;
+    height: 140px;
+    background-color: floralwhite;
+
+    right: 3%;
+    bottom: 5%;
+}
+
+
+html {
+    scroll-behavior: smooth;
+	}
+
+.type-photo {
+    display: block;
+	object-fit: cover;
+	 width: 100%;
+    height: 250px;
+}
+
+
+.header-buttons {
+    width: 70%;
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+.header-button {
+    display: block;
+
+    border: 3px solid midnightblue;
+    border-radius: 20px;
+
+    padding: 20px;
+    margin: 20px 0;
+
+    font-family: "Apoca", serif;
+    font-size: 30px;
+    color: midnightblue;
+
+    text-decoration: none;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.header-button:hover {
+    background-color: midnightblue;
+    color: floralwhite;
+}
+
+header {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center, top;
+	background-attachment: scroll;
+	padding: 50px 50px;
+    margin-bottom: 50px;
+} 
+
+h1 {
+	font-family: "apoca", apoca;
+	font-size: 70px;
+	font-weight: 200;
+	color: floralwhite;
+	text-align: center;
+}
+
+h2 {
+	font-family: "rubik", regular;
+	font-size: 40px;
+	color:midnightblue;
+	text-align: center;
+}
+
+#color h2 {
+    color: floralwhite;
+}
+
+
+
+h3 {
+	font-family: "rubik", light;
+	font-size: 20px;
+	font-weight: 600;
+	color: cornflowerblue;
+	text-align: center;
+}
+
+p {
+	font-family: "rubik";
+	font-size: 20px;
+	font-weight: 200;
+	color: midnightblue;
+	margin: 20px 50px 30px 50px;
+	text-align: justify;
+	
+}
+
+medium {
+	font-family: rubik;
+	color: cornflowerblue;
+	align-content: center;
+	text-align: center;
+	font-weight: 500;
+	
+}
+
+#color h3 {
+    color: floralwhite;
+}
+
+#typography h2 {
+	color: floralwhite;
+}
+
+#typography medium {
+	color: floralwhite;
+}
+
+#typography h3 {
+	color: floralwhite;
+}
+
+section {
+    background-color: floralwhite;
+    border-radius: 40px;
+
+    width: 70%;
+    max-width: 900px;
+
+    padding: 50px;
+    margin: 60px auto;
+
+    text-align: center;
+}
+
+section2 {
+	display: block;
+	background-color: cornflowerblue;
+    border-radius: 40px;
+    width: 70%;
+    max-width: 900px;
+    padding: 50px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+section3 {
+	display: block;
+	background-color: midnightblue;
+    border-radius: 40px;
+    width: 70%;
+    max-width: 900px;
+    padding: 50px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.divider {
+    text-align: center;
+    margin: 120px 0;
+}
+
+.divider span {
+    font-family: "apoca", sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    background-color: midnightblue;
+    color: floralwhite;
+    padding: 10px 20px;
+    border-radius: 20px;
+	background-color: floralwhite;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.number {
+    font-family: "Apoca", serif;
+    font-size: 90px;
+    color: midnightblue;
+ 	background-color: floralwhite;
+    padding: 10px 20px;
+    border-radius: 20px;
+	width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.type-list {
+    width: 70%;
+    max-width: 800px;
+    margin: 80px auto;
+}
+
+.type-list {
+    width: 70%;
+    max-width: 800px;
+    margin: 80px auto;
+}
+
+.list-item {
+    border: 3px solid floralwhite;
+    border-radius: 20px;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.list-item summary {
+    padding: 20px;
+    cursor: pointer;
+	color: floralwhite;
+	cursor: pointer;
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.list-word {
+    font-family: "Apoca", serif;
+    font-size: 30px;
+    color: floralwhite;
+}
+
+.list-number {
+    font-family: "Rubik", sans-serif;
+    margin-right: 20px;
+    color: floralwhite;
+	
+}
+
+.list-item p {
+    padding: 0 20px 20px 20px;
+	color: floralwhite
+}
+
+.blue-list .list-item {
+    border-color: midnightblue;
+}
+
+.blue-list .list-item summary {
+    color: midnightblue;
+	padding: 20px;
+    cursor: pointer;
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.blue-list .list-word {
+    color: midnightblue;
+}
+
+.blue-list .list-number {
+    color: midnightblue;
+}
+
+.blue-list .list-item p {
+    color: midnightblue;
+}
+.color-schemes {
+    width: 70%;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 50px;
+
+    background-color: midnightblue;
+    border-radius: 40px;
+}
+
+.color-schemes h2 {
+    color: floralwhite;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.scheme-list {
+    border-left: 3px solid floralwhite;
+}
+
+.scheme-item {
+    position: relative;
+    padding: 0 0 60px 45px;
+}
+
+.scheme-item:last-child {
+    padding-bottom: 0;
+}
+
+.scheme-dot {
+    position: absolute;
+    left: -13px;
+    top: 5px;
+
+    width: 18px;
+    height: 18px;
+
+    border: 3px solid floralwhite;
+    border-radius: 50%;
+}
+
+.scheme-text h3 {
+    color: floralwhite;
+    margin: 0 0 10px 0;
+}
+
+.scheme-text p {
+    color: floralwhite;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+
+.color-photo {
+    position: absolute;
+
+    width: 600px;
+    height: auto;
+    right: 50%;
+    margin-right: 70px;
+	rotate: 50%;
+}
+
+
+.color-header {
+   position: relative;
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.color-header h1 {
+	margin: 0px;
+	padding: 0px:
+}
+
+.color-photo2 {
+	 position: absolute;
+
+    width: 500px;
+    height: auto;
+
+    left: 50%;
+    margin-left: 70px;
+	rotate: 50%;
+}
+
+	.footer {
+    background-color: cornflowerblue;
+    color: midnightblue;
+
+    width: 90%;
+    margin: 120px auto 30px auto;
+    padding: 70px;
+
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+
+/* LITTLE TEXT AT TOP */
+
+.footer-small {
+    color: floralwhite;
+    font-family: "Jost", sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+
+/* BIG FOOTER HEADING */
+
+.footer h2 {
+    color: floralwhite;
+    font-family: "Apoca", serif;
+    font-size: 80px;
+    line-height: 0.9;
+
+    text-align: left;
+    margin: 30px 0 70px 0;
+}
+
+
+/* LINKS SECTION */
+
+.footer-links {
+    margin: 60px 0;
+}
+
+.footer-links h3 {
+    color: floralwhite;
+    text-align: left;
+    font-size: 25px;
+}
+
+.link-columns {
+    display: flex;
+    gap: 100px;
+}
+
+.link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-group p {
+    color: floralwhite;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.link-group a {
+    color: floralwhite;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+}
+
+.link-group a:hover {
+    text-decoration: underline;
+}
+
+
+/* VERY BOTTOM */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 2px solid floralwhite;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: floralwhite;
+    margin: 0;
+}
+
+.color-meanings {
+    width: 70%;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 50px;
+
+    background-color: floralwhite;
+    border-radius: 40px;
+}
+
+.color-meanings h2 {
+    color: midnightblue;
+    font-family: "Apoca", serif;
+    font-size: 50px;
+    text-align: left;
+
+    margin: 0 0 40px 0;
+}
+
+.color-meanings ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.color-meanings li {
+    color: midnightblue;
+    font-family: "Jost", sans-serif;
+    font-size: 17px;
+
+    padding: 15px 0;
+    border-bottom: 1px solid midnightblue;
+}
+
+.color-meanings li:last-child {
+    border-bottom: none;
+}
+
+.color-meanings li span {
+    font-size: 22px;
+    margin-right: 12px;
+}
+
+.color-meanings strong {
+    font-weight: 600;
+}
+
+.color-steps {
+    width: 75%;
+    max-width: 900px;
+    margin: 100px auto;
+}
+
+
+/* EACH CARD */
+
+.color-step {
+    background-color: floralwhite;
+    border-radius: 40px;
+
+    padding: 40px;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+
+/* BIG NUMBERS */
+
+.step-number {
+    font-family: "Apoca", serif;
+    font-size: 70px;
+    color: midnightblue;
+}
+
+
+/* TEXT AREA */
+
+.step-info {
+    flex: 1;
+}
+
+
+/* TITLES */
+
+.step-info h2 {
+    font-family: "Apoca", serif;
+    font-size: 32px;
+    color: midnightblue;
+
+    text-align: left;
+    margin: 5px 0 15px 0;
+}
+
+
+/* PARAGRAPHS */
+
+.step-info p {
+    font-family: "Jost", sans-serif;
+    color: midnightblue;
+
+    line-height: 1.6;
+    margin: 0;
+}
+
+.type-color-summary {
+    width: 60%;
+    max-width: 700px;
+
+    margin: 80px auto;
+    padding: 40px;
+
+    background-color: floralwhite;
+    border-radius: 40px;
+
+    text-align: center;
+}
+
+.type-color-summary h2 {
+    font-family: "Apoca", serif;
+    font-size: 40px;
+    color: midnightblue;
+
+    margin: 0 0 15px 0;
+}
+
+.type-color-summary p {
+    font-family: "Jost", sans-serif;
+    color: midnightblue;
+    line-height: 1.6;
+
+    margin: 0 auto 20px auto;
+}
+
+.type-color-summary span {
+    font-family: "Apoca", serif;
+    color: midnightblue;
+    font-size: 18px;
+}
+
+
+.section-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 25px;
+    margin: 25px 0;
+}
